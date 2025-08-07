@@ -3,9 +3,16 @@ const listarContatos = require('./listarContatos');
 const adicionarContato = require('./adicionarContato');
 const atualizarContato = require('./atualizarContato');
 const removerContato = require('./removerContato');
-const contatos = []
 
-function mainMenu(){
+const contatos = [
+    { id: 1, nome: 'Alice', telefone: '1234-5678', email:
+    'alice@example.com' },
+    { id: 2, nome: 'Bob', telefone: '8765-4321', email:
+    'bob@example.com' },
+    { id: 3, nome: 'Carol', telefone: '5678-1234', email:
+    'carol@example.com' }
+    ];
+function mainMenu(contatos){
 console.log(`
     \n<<<GERENCIADOR DE CONTATOS>>>
 1. Adicionar contato
@@ -16,7 +23,7 @@ console.log(`
 `);
 const opcao = prompt('Escolha uma opção: ');
 switch (opcao) {
-case '1':
+case '1':5
 adicionarContato(mainMenu, contatos);
 mainMenu()
 break;
@@ -34,5 +41,5 @@ break;
 default:
 console.log('Opção inválida!');
 }}
-mainMenu();
+mainMenu(contatos);
 
