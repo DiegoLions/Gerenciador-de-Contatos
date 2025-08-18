@@ -23,7 +23,7 @@ console.log(`
 `);
 const opcao = prompt('Escolha uma opção: ');
 switch (opcao) {
-case '1':5
+case '1':
 adicionarContato(mainMenu, contatos);
 mainMenu()
 break;
@@ -37,9 +37,9 @@ case '4':
 removerContato(mainMenu, contatos);
 break;
 case '5':
-break;
+console.log('Saindo do Gerenciador de Contatos. Obrigado por utilizá-lo! Até logo!');
+return; 
 default:
 console.log('Opção inválida!');
 }}
 mainMenu(contatos);
-
