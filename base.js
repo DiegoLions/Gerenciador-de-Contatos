@@ -1,3 +1,5 @@
+// AS RESPOSTAS DAS QUESTÕES DISCURSIVAS ESTÃO NO ARQUIVO README.
+
 const prompt = require('prompt-sync')();
 const listarContatos = require('./listarContatos');
 const adicionarContato = require('./adicionarContato');
